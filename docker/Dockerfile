@@ -31,7 +31,7 @@
 ############################################################
 
 FROM ubuntu
-MAINTAINER Dan McDougall <daniel.mcdougall@liftoffsoftware.com>
+LABEL "sourcecode"="https://github.com/DanHam/GateOne"
 
 ENV GATEONE_REPO_URL https://github.com/DanHam/GateOne.git
 
