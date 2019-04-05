@@ -40,16 +40,17 @@ ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get -y upgrade
 
 # Install dependencies
-RUN apt-get -y \
-    install python-pip \
-    python-pil \
-    python-setuptools \
+RUN apt-get -y --no-install-recommends install \
+    gcc \
+    git \
+    openssh-client \
+    python-dev \
     python-mutagen \
     python-pam \
-    python-dev \
-    git \
-    telnet \
-    openssh-client && \
+    python-pil \
+    python-pip \
+    python-setuptools \
+    telnet && \
     apt-get -y clean && \
     apt-get -q -y autoremove
 
