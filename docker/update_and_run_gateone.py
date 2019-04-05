@@ -27,8 +27,8 @@ if __name__ == "__main__":
     os.chdir('/gateone/GateOne')
     if '--noupdate' not in go_args:
         retcode, output = getstatusoutput('git pull')
-        if 'up-to-date' in output:
-            print("Gate One is already up-to-date")
+        if 'up to date' in output:
+            print("Gate One is already up to date")
         else:
             print("Installing the latest code...")
             retcode, output = getstatusoutput('python setup.py install')
