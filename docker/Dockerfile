@@ -37,7 +37,7 @@ ENV GATEONE_REPO_URL https://github.com/DanHam/GateOne.git
 
 # Ensure everything is up-to-date
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update --fix-missing && apt-get -y upgrade
+RUN apt-get update && apt-get -y upgrade
 
 # Install dependencies
 RUN apt-get -y \
