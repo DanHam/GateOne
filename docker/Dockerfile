@@ -41,6 +41,7 @@ RUN apt-get update && apt-get -y upgrade
 
 # Install dependencies
 RUN apt-get -y --no-install-recommends install \
+    dtach \
     gcc \
     git \
     openssh-client \
